@@ -63,7 +63,7 @@ class Main
                 nQueen(mat, r + 1);
  
                 // backtrack and remove the queen from the current square
-                mat[r][i] = '–';
+                mat[r][i] = '-';
             }
         }
     }
@@ -79,7 +79,7 @@ class Main
  
         // initialize `mat[][]` by `-`
         for (int i = 0; i < N; i++) {
-            Arrays.fill(mat[i], '–');
+            Arrays.fill(mat[i], '-');
         }
  
         nQueen(mat, 0);

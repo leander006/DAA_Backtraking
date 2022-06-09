@@ -1,3 +1,4 @@
+
 import java.util.*;
 public class Main
 {
@@ -57,8 +58,9 @@ static boolean graphColoring(boolean[][] graph, int m,int i, int[] color,int V)
 	color[i] = j;
 
 	// Recur of the rest vertices
-	if (graphColoring(graph, m, i + 1, color,V))
+	if (graphColoring(graph, m, i + 1, color,V)){
 		return true;
+	}
 	color[i] = 0;
 	}
 	return false;
